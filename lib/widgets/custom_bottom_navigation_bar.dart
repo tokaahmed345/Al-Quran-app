@@ -2,6 +2,7 @@ import 'package:alquran/screens/audiopage.dart';
 import 'package:alquran/screens/content.dart';
 import 'package:alquran/screens/settings.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 class CustomBottomNavigationBar extends StatefulWidget {
@@ -33,6 +34,8 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           Navigator.pushNamed(context, Content.id);
         } else if (index == 2) {
           Navigator.pushNamed(context, SettingPage.id);
+        } else if (index == 3) {
+          Navigator.pushNamed(context, SettingPage.id);
         }
       },
       currentIndex: index,
@@ -53,11 +56,20 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         ),
         BottomNavigationBarItem(
           icon: Icon(
+FontAwesomeIcons.moon            ,
+            size: iconSize,
+          ),
+          label: 'Al_Azkar',
+        ),
+       
+        BottomNavigationBarItem(
+          icon: Icon(
             Icons.music_note,
             size: iconSize,
           ),
           label: 'Audio',
         ),
+       
         BottomNavigationBarItem(
           icon: Icon(
             Icons.settings,
@@ -65,6 +77,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           ),
           label: 'Setting',
         ),
+        
       ],
     );
   }
