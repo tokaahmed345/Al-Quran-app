@@ -1,6 +1,8 @@
 import 'package:alquran/cubits/cubit/languge_cubit_cubit.dart';
 import 'package:alquran/screens/audiopage.dart';
 import 'package:alquran/screens/audiosound.dart';
+import 'package:alquran/screens/azkar.dart';
+import 'package:alquran/screens/azkar_contetnt.dart';
 import 'package:alquran/screens/content.dart';
 import 'package:alquran/screens/homepage.dart';
 import 'package:alquran/screens/juz.dart';
@@ -65,6 +67,8 @@ class Al_Quran extends StatelessWidget {
      AudioHome.id:(context)=>AudioHome(),
  
 SettingPage.id:(context)=>SettingPage(),
+Al_Azkar.id:(context)=>Al_Azkar(),
+Azkar_Content.id:(context)=>Azkar_Content()
 
 
      },

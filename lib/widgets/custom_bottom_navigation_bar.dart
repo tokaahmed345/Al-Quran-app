@@ -1,4 +1,5 @@
 import 'package:alquran/screens/audiopage.dart';
+import 'package:alquran/screens/azkar.dart';
 import 'package:alquran/screens/content.dart';
 import 'package:alquran/screens/settings.dart';
 import 'package:flutter/material.dart';
@@ -28,14 +29,14 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         index = value;
         setState(() {});
 
-        if (index == 1) {
+        if (index == 2) {
           Navigator.pushNamed(context, AudioHome.id);
         } else if (index == 0) {
           Navigator.pushNamed(context, Content.id);
-        } else if (index == 2) {
-          Navigator.pushNamed(context, SettingPage.id);
         } else if (index == 3) {
           Navigator.pushNamed(context, SettingPage.id);
+        } else if (index == 1) {
+          Navigator.pushNamed(context, Al_Azkar.id);
         }
       },
       currentIndex: index,
