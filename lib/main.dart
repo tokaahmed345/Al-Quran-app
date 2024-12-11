@@ -68,7 +68,7 @@ class Al_Quran extends StatelessWidget {
  
 SettingPage.id:(context)=>SettingPage(),
 Al_Azkar.id:(context)=>Al_Azkar(),
-Azkar_Content.id:(context)=>Azkar_Content()
+AzkarContent.id:(context)=>AzkarContent()
 
 
      },

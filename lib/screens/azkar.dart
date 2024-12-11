@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:alquran/screens/azkar_contetnt.dart';
 import 'package:flutter/material.dart';
+import 'package:alquran/screens/azkar_contetnt.dart';
 
 class Al_Azkar extends StatelessWidget {
   const Al_Azkar({super.key});
@@ -9,14 +9,18 @@ class Al_Azkar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
+    double fontSize = screenSize.width > 600 ? 29 : 22; 
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Al_Azkar"),
+        title: Text(
+          "Al_Azkar",
+          style: TextStyle(fontSize: screenSize.width > 600 ? 30 : 20), 
+        ),
         backgroundColor: Color(0xfff0ede8),
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios, size: 35),
+          icon: Icon(Icons.arrow_back_ios, size: screenSize.width > 600 ? 40 : 30), 
           onPressed: () {
             Navigator.pop(context);
           },
@@ -35,35 +39,40 @@ class Al_Azkar extends StatelessWidget {
               }
 
               if (snapshot.hasData) {
-                List azkarData = json.decode(snapshot.data!);
-
+List sections = json.decode(snapshot.data!);
                 return LayoutBuilder(
                   builder: (context, constraints) {
                     return ListView.builder(
-                      itemCount: azkarData.length,
+                      itemCount: sections.length,
                       itemBuilder: (context, index) {
-                        var azkar = azkarData[index];
-
-                        double fontSize = screenSize.width > 600 ? 29 : 22;
+                var section = sections[index];
 
                         return Padding(
-                          padding: EdgeInsets.symmetric(vertical: 16.0),
+                          padding: EdgeInsets.symmetric(
+                            vertical: screenSize.width > 600 ? 20.0 : 16.0, 
+                            horizontal: screenSize.width > 600 ? 40.0 : 16.0, 
+                          ),
                           child: InkWell(
                             onTap: () {
-                              Navigator.pushNamed(context, Azkar_Content.id);
+                              Navigator.pushNamed(
+                                context,
+                              AzkarContent.id,
+                                arguments: {
+                            'name': section['name'],
+                            'section_id': section['id']                             },
+                              );
                             },
-                            child: ListTile(
-                              leading: CircleAvatar(
+                            child: Container(
+                              padding: EdgeInsets.all(screenSize.width > 600 ? 30.0 : 20.0), 
+                              color: Color.fromARGB(255, 250, 239, 220),
+                              child: Center(
                                 child: Text(
-                                  azkar['id'].toString(),
-                                  style: TextStyle(fontSize: 23, color: Colors.white,),
+                                  section['name'],
+                                  style: TextStyle(
+                                    fontSize: fontSize,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                                backgroundColor: Colors.black,
-                                
-                              ),
-                              trailing: Text(
-                                azkar['name'],
-                                style: TextStyle(fontSize: fontSize,fontWeight: FontWeight.bold),
                               ),
                             ),
                           ),

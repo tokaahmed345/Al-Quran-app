@@ -1,5 +1,6 @@
 import 'package:alquran/screens/audiopage.dart';
 import 'package:alquran/screens/azkar.dart';
+import 'package:alquran/screens/azkar_contetnt.dart';
 import 'package:alquran/screens/content.dart';
 import 'package:alquran/screens/settings.dart';
 import 'package:flutter/material.dart';
