@@ -1,16 +1,18 @@
 # alquran
+Quran App is a Flutter application designed to help users read and listen to the Quran with ease. The app fetches Quranic text, images of pages (Ayah images), and audio recitations via APIs to provide a rich, interactive experience.
 
-A new Flutter project.
+Built using Cubit for state management, the app efficiently handles data loading and UI updates. Users can browse Quran pages with corresponding images and listen to the audio for each page or verse, making it suitable for reading, memorizing, and listening.
 
-## Getting Started
+Features
+Fetches Quran text and page images dynamically using APIs
 
-This project is a starting point for a Flutter application.
+Plays audio recitations synchronized with each page or verse
 
-A few resources to get you started if this is your first Flutter project:
+Supports navigation between pages and Surahs
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Uses Cubit (Bloc) for smooth state management and UI responsiveness
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Displays clear high-quality images of Quran pages
+
+User-friendly interface for seamless reading and listening experience
+
