@@ -5,11 +5,7 @@
   The app allows users to browse Surahs, play audio recitations, and enjoy a smooth, intuitive user experience powered by <strong>RESTful APIs</strong>.
 </p>
 
-<p align="center">
-  <a href="https://github.com/tokaahmed345/Al-Quran-app.git">
-    🔗 View the GitHub Repository
-  </a>
-</p>
+
 
 ---
 
@@ -31,22 +27,21 @@ This project was created as a practical implementation to strengthen my skills i
 
 ---
 
-## 🛠️ Tech Stack
+
 📸 Screenshots
-<p>
-  <img src="screenshots/screenshots/Screenshot_1750728007.png"/>
-  <img src="screenshots/screenshots/Screenshot_1750728078.pngScreenshot_1750728021.png"/>
-  <img src="screenshots/screenshots/Screenshot_1750728027.png"/>
-  <img src="screenshots/screenshots/Screenshot_1750728060.png"/>
-  <img src ="screenshots/screenshots/Screenshot_1750728063.png" />
-  <img src ="screenshots/screenshots/Screenshot_1750728078.png">
-  <img src ="screenshots/screenshots/Screenshot_1750728096.png">
-  <img src ="screenshots/screenshots/Screenshot_1750728115.png">
-  <img src ="screenshots/screenshots/Screenshot_1750728153.png">
-
-
-
+<p align="center">
+  <img src="screenshots/screenshots/Screenshot_1750728007.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728078.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728021.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728027.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728060.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728063.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728078.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728096.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728115.png" width="200"/>
+  <img src="screenshots/screenshots/Screenshot_1750728153.png" width="200"/>
 </p>
+
 
 ---
 
